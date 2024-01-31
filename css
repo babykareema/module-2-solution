@@ -1,1 +1,57 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+section {
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.section-title {
+    background-color: #ffcc00; /* Unique color for section title background */
+    color: black; /* Text color for section title */
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+/* Desktop View */
+.desktop {
+    width: 33.33%;
+    float: left;
+}
+
+/* Tablet View */
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .desktop {
+        width: 50%;
+    }
+
+    .tablet {
+        width: 100%;
+        clear: both;
+    }
+}
+
+/* Mobile View */
+@media only screen and (max-width: 767px) {
+    .desktop,
+    .tablet {
+        width: 100%;
+        clear: both;
+    }
+}
 
